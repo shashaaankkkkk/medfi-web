@@ -14,13 +14,12 @@ from django.contrib.auth import authenticate, login, logout
 
 
 # Create your views here.
-def index(request):
-    return render(request,"login.html")
 
 def signin(request):
     if request.method == 'POST':
         username = request.POST['username']
         pass1 = request.POST['pass1']
+    
         
         user = authenticate(username=username, password=pass1)
         
@@ -28,12 +27,12 @@ def signin(request):
             login(request, user)
             fname = user.first_name
             # messages.success(request, "Logged In Sucessfully!!")
-            return render(request, "authentication/index.html",{"fname":fname})
+            return render(request, "patient/index.html",{"fname":fname})
         else:
             messages.error(request, "Bad Credentials!!")
             return redirect('home')
     
-    return render(request, "authentication/signin.html")
+    return render(request, "login.html")
 
 
 def signout(request):
