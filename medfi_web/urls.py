@@ -23,8 +23,8 @@ from hospital import views as hospital_view
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("",index),
-    path("patient/profile",patient_view.profile),
-    path("patient/dashboard",patient_view.index),
-    path("hospital/dashboard",hospital_view.index),
-    path("hospital/doctors",hospital_view.doctors),
+    path("patient/profile/",patient_view.profile),
+    path("patient/dashboard/",patient_view.index),
+    path("hospital/dashboard/",hospital_view.index),
+    path("hospital/doctors/",hospital_view.doctors),
 ]
