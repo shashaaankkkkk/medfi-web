@@ -5,3 +5,5 @@ def index(request):
     return render(request,"hospital/index.html")
 def doctors(request):
     return render(request,"hospital/doctors.html")
+def upcoming_patient(request):
+    return render(request,"hospital/upcoming-patient.html")
