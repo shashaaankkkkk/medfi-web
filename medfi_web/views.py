@@ -10,10 +10,13 @@ from django.contrib import messages
 from django.contrib.sites.shortcuts import get_current_site
 
 from django.contrib.auth import authenticate, login, logout
-
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
+
+def index(request):
+    return render(request, "login.html")
 
 def signin(request):
     if request.method == 'POST':
