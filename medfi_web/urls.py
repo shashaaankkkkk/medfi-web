@@ -24,6 +24,8 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("",index),
     path("patient/profile/",patient_view.profile),
+    path("patient/emergency",patient_view.emergency),
+    
     path("patient/dashboard/",patient_view.index),
     path("hospital/dashboard/",hospital_view.index),
     path("hospital/doctors/",hospital_view.doctors),
