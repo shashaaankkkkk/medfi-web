@@ -7,3 +7,5 @@ def index(request):
     return render(request,"patient/index.html")
 def emergency(request):
     return render(request,"patient/emergency.html")
+def map1(request):
+    return render(request,"patient/map.html")
