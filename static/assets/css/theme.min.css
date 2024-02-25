@@ -27240,16 +27240,6 @@ span.flatpickr-weekday,
     box-shadow: -5px 0 0 var(--phoenix-flatpickr-calendar-bg), 5px 0 0 var(--phoenix-flatpickr-calendar-bg)
 }
 
-.flatpickr-months {
-    height: 50px
-}
-
-.flatpickr-months .flatpickr-prev-month,
-.flatpickr-months .flatpickr-next-month {
-    top: 20px;
-    padding: 0
-}
-
 .flatpickr-months .flatpickr-prev-month {
     left: 28px !important
 }
