@@ -54,15 +54,10 @@
         <!-- scrollbar removed-->
         <div class="navbar-vertical-content">
           <ul class="navbar-nav flex-column" id="navbarVerticalNav">
-            <li class="nav-item">
-              <!-- parent pages-->
-              <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-home" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="nv-home">
-                  <div class="d-flex align-items-center">
-                    <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-icon"><span data-feather="pie-chart"></span></span><span class="nav-link-text">Admin</span>
-                  </div>
-                </a>
-                </div>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="/" data-bs-toggle="" aria-expanded="false">
+              <div class="d-flex align-items-center"><span class="nav-link-text">Admin Dashboard</span></div>
+            </a><!-- more inner pages-->
+          </li>
             <li class="nav-item">
               <!-- label-->
               <p class="navbar-vertical-label">Apps</p>
@@ -74,19 +69,14 @@
                 </a>
                 <div class="parent-wrapper label-1">
                   <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-e-commerce">
-                    <li class="collapsed-nav-item-title d-none">Admin</li>
-                    <li class="nav-item"><a class="nav-link dropdown-indicator" href="/hospital/patient" data-bs-toggle="collapse" aria-expanded="true" aria-controls="nv-admin">
-                        <div class="d-flex align-items-center">
-                          <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-text">Patient</span>
-                        </div>
-                      </a><!-- more inner pages--> 
-                    </li>
-                    <li class="nav-item"><a class="nav-link dropdown-indicator" href="/hospital/patient" data-bs-toggle="collapse" aria-expanded="true" aria-controls="nv-customer">
-                        <div class="d-flex align-items-center">
-                          <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span class="nav-link-text">Hospital</span>
-                        </div>
-                      </a><!-- more inner pages-->
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/hospital/patient" data-bs-toggle="" aria-expanded="false">
+                      <div class="d-flex align-items-center"><span class="nav-link-text">Patient Upcoming </span></div>
+                    </a><!-- more inner pages-->
+                  </li>
+                    <li class="nav-item"><a class="nav-link" href="/hospital/map" data-bs-toggle="" aria-expanded="false">
+                      <div class="d-flex align-items-center"><span class="nav-link-text">Patient Map</span></div>
+                    </a><!-- more inner pages-->
+                  </li>
                   </ul>
                 </div>
               </div><!-- parent pages-->
@@ -98,14 +88,15 @@
                 <div class="parent-wrapper label-1">
                   <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-CRM">
                     <li class="collapsed-nav-item-title d-none">Dashboard</li>
-                    <li class="nav-item"><a class="nav-link" href="/patient/dashboard/" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Patient Dashboard</span></div>
-                      </a><!-- more inner pages-->
-                    </li>
+                    
                     <li class="nav-item"><a class="nav-link" href="/hospital/dashboard" data-bs-toggle="" aria-expanded="false">
                         <div class="d-flex align-items-center"><span class="nav-link-text">Hospital Dashboard</span></div>
                       </a><!-- more inner pages-->
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="/patient/dashboard/" data-bs-toggle="" aria-expanded="false">
+                      <div class="d-flex align-items-center"><span class="nav-link-text">Patient Dashboard</span></div>
+                    </a><!-- more inner pages-->
+                  </li>
                   </ul>
                 </div>
               </li>
@@ -722,32 +713,9 @@
                   <div class="dropdown-item-wrapper"><span class="uil fs-0 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="shopping-cart"></span>E commerce</span></div>
                 </a>
                 <ul class="dropdown-menu">
-                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="admin" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                      <div class="dropdown-item-wrapper"><span class="uil fs-0 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Admin</span></div>
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="admin" href="/" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                      <div class="dropdown-item-wrapper"><span class="uil fs-0 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>sad</span></div>
                     </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../apps/e-commerce/admin/add-product.html">
-                          <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Add product</div>
-                        </a></li>
-                      <li><a class="dropdown-item" href="../apps/e-commerce/admin/products.html">
-                          <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Products</div>
-                        </a></li>
-                      <li><a class="dropdown-item" href="../apps/e-commerce/admin/customers.html">
-                          <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Customers</div>
-                        </a></li>
-                      <li><a class="dropdown-item" href="../apps/e-commerce/admin/customer-details.html">
-                          <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Customer details</div>
-                        </a></li>
-                      <li><a class="dropdown-item" href="../apps/e-commerce/admin/orders.html">
-                          <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Orders</div>
-                        </a></li>
-                      <li><a class="dropdown-item" href="../apps/e-commerce/admin/order-details.html">
-                          <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Order details</div>
-                        </a></li>
-                      <li><a class="dropdown-item" href="../apps/e-commerce/admin/refund.html">
-                          <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Refund</div>
-                        </a></li>
-                    </ul>
                   </li>
                   <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="customer" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                       <div class="dropdown-item-wrapper"><span class="uil fs-0 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Customer</span></div>
@@ -2162,8 +2130,8 @@
                   <div class="dropdown-item-wrapper"><span class="uil fs-0 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil" data-feather="shopping-cart"></span>E commerce</span></div>
                 </a>
                 <ul class="dropdown-menu">
-                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="admin" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                      <div class="dropdown-item-wrapper"><span class="uil fs-0 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>Admin</span></div>
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="admin" href="" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                      <div class="dropdown-item-wrapper"><span class="uil fs-0 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span class="me-2 uil"></span>asd</span></div>
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="../apps/e-commerce/admin/add-product.html">
