@@ -11,6 +11,15 @@ Make sure you have the following installed:
 - [Python](https://www.python.org/downloads/)
 - [Django](https://www.djangoproject.com/)
 
+# Demo
+### Upcoming patient list
+<img width="1710" alt="Screenshot 2025-01-09 at 7 09 20 PM" src="https://github.com/user-attachments/assets/81924880-cf23-47f1-9892-e566c95ac4eb" />
+
+
+### Location Routing to locations
+https://github.com/user-attachments/assets/3353206f-a931-451d-aad4-185e0f8b58f6
+
+
 ### Setting Up the Backend
 
 1. Clone the repository:
